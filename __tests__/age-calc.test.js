@@ -56,11 +56,11 @@ describe('GalacticAge', () => {
   beforeEach(() => { 
     galacticAge = new GalacticAge(25, 100);
     galacticAge.calcAge();
-    galacticAge.calcExpectancy()
+    galacticAge.calcExpectancy();
   });
 
   test('should create GalacticAge method that returns user inputted age in Mercury years.', () => {
-    expect(galacticAge.mercuryAgeExpect).toEqual("311.08");
+    expect(galacticAge.mercuryAgeExpect).toEqual(311.08);
   });
 
 });
