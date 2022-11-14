@@ -1,6 +1,6 @@
-# (Application Name)
+# Galactic Age
 
-#### (Brief Description of Application)
+#### The applications calculates user's age on different planets based on solar year.
 
 #### By (Your Name Here)
 
@@ -24,7 +24,7 @@
 
 ## Setup/Installation Requirements
 
-- Click on or copy and paste this link https://anton3ch.github.io/***/ into your preferred browser
+- Click on or copy and paste this link https://anton3ch.github.io/galactic-age/ into your preferred browser
 
   **_OR_**
 
