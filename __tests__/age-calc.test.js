@@ -67,4 +67,8 @@ describe('GalacticAge', () => {
     expect(galacticAge.venusAgeExpect).toEqual(121.67);
   });
 
+
+  test('should create GalacticAge method that returns user inputted age in Venus years.', () => {
+    expect(galacticAge.marsAgeExpect).toEqual(39.85);
+  });
 });
