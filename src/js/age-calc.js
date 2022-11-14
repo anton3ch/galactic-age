@@ -8,5 +8,6 @@ export class GalacticAge {
     this.venusAge = (this.age * 365 / 225).toFixed(2);
     this.marsAge = (this.age * 365 / 687).toFixed(2);
     this.jupiterAge = (this.age / 11.86).toFixed(2);
+    this.saturnAge = (this.age / 29.5).toFixed(2);
   }
 }
