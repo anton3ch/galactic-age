@@ -14,4 +14,8 @@ export class GalacticAge {
     this.neptuneAge = (this.age / 165).toFixed(2);
     this.plutoAge = (this.age / 248).toFixed(2);
   }
+
+  calcExpectancy  () {
+    this.mercuryAgeExpect = Math.abs(((this.lifeExpectancy - this.age) * 365 / 88).toFixed(2));
+  }
 }
