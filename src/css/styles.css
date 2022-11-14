@@ -26,40 +26,80 @@ img {
   top: 50%;
   transform: translate(0%, -50%);
 }
+#mercuryInfo {
+  left: 10%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
 #venus {
   left: 18%;
   top: 40%;
   transform: translate(0%, -50%);
+}
+#venusInfo {
+  left: 18%;
+  top: 20%;
+  transform: translate(-50%, -50%);
 }
 #earth {
   left: 30%;
   top: 60%;
   transform: translate(0%, -50%);
 }
+#earthInfo {
+  left: 30%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
 #mars {
   left: 39%;
   top: 35%;
   transform: translate(0%, -50%);
+}
+#marsInfo {
+  left: 39%;
+  top: 17%;
+  transform: translate(-50%, -50%);
 }
 #jupiter {
   left: 44%;
   top: 50%;
   transform: translate(0%, -50%);
 }
+#jupiterInfo {
+  left: 49%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
 #saturn {
   left: 62%;
   top: 30%;
   transform: translate(0%, -50%);
+}
+#saturnInfo {
+  left: 52%;
+  top: 20%;
+  transform: translate(-50%, -50%);
 }
 #uranus {
   left: 80%;
   top: 55%;
   transform: translate(0%, -50%);
 }
+#uranusInfo {
+  left: 71%;
+  top: 71%;
+  transform: translate(-50%, -50%);
+}
 #neptune {
   left: 88%;
   top: 42%;
   transform: translate(0%, -50%);
+}
+#neptuneInfo {
+  left: 88%;
+  top: 22%;
+  transform: translate(-50%, -50%);
 }
 
 .hidden {
