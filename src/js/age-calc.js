@@ -11,5 +11,6 @@ export class GalacticAge {
     this.saturnAge = (this.age / 29.5).toFixed(2);
     this.uranusAge = (this.age / 84).toFixed(2);
     this.neptuneAge = (this.age / 165).toFixed(2);
+    this.plutoAge = (this.age / 248).toFixed(2);
   }
 }
