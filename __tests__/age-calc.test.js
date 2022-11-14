@@ -47,6 +47,6 @@ describe('GalacticAge', () => {
   });
 
   test('should calculate user inputted age in Pluto years.', () => {
-    expect(galacticAge.plutoAge).toEqual("0.1");
+    expect(galacticAge.plutoAge).toEqual("0.10");
   });
 });
