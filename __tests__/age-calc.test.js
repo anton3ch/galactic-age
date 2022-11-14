@@ -3,11 +3,11 @@ import {GalacticAge} from '../src/js/age-calc.js';
 describe('GalacticAge', () => {
   let galacticAge;
   beforeEach(() => { 
-    galacticAge = new GalacticAge(25);
+    galacticAge = new GalacticAge(25, 100);
   });
 
-  test('should create galacticAge object with user input age parameter', () => {
-    expect(galacticAge).toEqual({age: 25});
+  test('should create galacticAge object with user input age and life expectancy parameters', () => {
+    expect(galacticAge).toEqual({age: 25, lifExpectancy: 100});
   });
 });
 
