@@ -61,3 +61,15 @@ img {
   top: 42%;
   transform: translate(0%, -50%);
 }
+
+.hidden {
+  position: absolute;
+  background-color: rgb(53, 53, 59);
+  padding: 20px;
+  border-radius: 20px;
+  width: max-content;
+}
+
+.hidden {
+
+}
