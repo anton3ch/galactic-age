@@ -82,4 +82,8 @@ describe('GalacticAge', () => {
   test('should create GalacticAge method that returns how many years user has left to live in Uranus years.', () => {
     expect(galacticAge.uranusAgeExpect).toEqual(0.89);
   });
+
+  test('should create GalacticAge method that returns how many years user has left to live in Neptune years.', () => {
+    expect(galacticAge.neptuneAgeExpect).toEqual(0.45);
+  });
 });
