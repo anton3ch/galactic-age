@@ -12,6 +12,6 @@ describe('GalacticAge', () => {
 
   test('should create GalacticAge method that returns user inputted age in Mercury years.', () => {
     galacticAge.calcAge()
-    expect(galacticAge).toEqual({age: 25, mercuryAge: 6});
+    expect(galacticAge).toEqual({age: 25, mercuryAge: 103.69});
   });
 });

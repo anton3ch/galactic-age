@@ -4,7 +4,7 @@ export class GalacticAge {
   }
 
   calcAge() {
-    this.mercuryAge = this.age * 0.24;
+    this.mercuryAge = (this.age * 365 / 88).toFixed(2);
 
   }
 }
