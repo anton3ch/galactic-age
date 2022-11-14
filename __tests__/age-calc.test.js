@@ -14,7 +14,7 @@ describe('GalacticAge', () => {
 describe('GalacticAge', () => {
   let galacticAge;
   beforeEach(() => { 
-    galacticAge = new GalacticAge(25);
+    galacticAge = new GalacticAge(25, 100);
     galacticAge.calcAge();
   });
 
@@ -49,4 +49,18 @@ describe('GalacticAge', () => {
   test('should calculate user inputted age in Pluto years.', () => {
     expect(galacticAge.plutoAge).toEqual("0.10");
   });
+});
+
+describe('GalacticAge', () => {
+  let galacticAge;
+  beforeEach(() => { 
+    galacticAge = new GalacticAge(25, 100);
+    galacticAge.calcAge();
+    galacticAge.calcExpectancy()
+  });
+
+  test('should create GalacticAge method that returns user inputted age in Mercury years.', () => {
+    expect(galacticAge.mercuryAgeExpect).toEqual("311.08");
+  });
+
 });
