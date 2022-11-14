@@ -8,14 +8,21 @@ describe('GalacticAge', () => {
 
   test('should create galacticAge object with user input age parameter', () => {
     expect(galacticAge).toEqual({age: 25});
-    galacticAge.calcAge()
+  });
+});
+
+describe('GalacticAge', () => {
+  let galacticAge;
+  beforeEach(() => { 
+    galacticAge = new GalacticAge(25);
+    galacticAge.calcAge();
   });
 
   test('should create GalacticAge method that returns user inputted age in Mercury years.', () => {
-    expect(galacticAge.mercuryAge).toEqual(103.69);
+    expect(galacticAge.mercuryAge).toEqual("103.69");
   });
 
   test('should calculate user inputted age in Venus years.', () => {
-    expect(galacticAge.venusAge).toEqual(40.56);
+    expect(galacticAge.venusAge).toEqual("40.56");
   });
 });
