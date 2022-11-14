@@ -41,4 +41,8 @@ describe('GalacticAge', () => {
   test('should calculate user inputted age in Uranus years.', () => {
     expect(galacticAge.uranusAge).toEqual("0.30");
   });
+
+  test('should calculate user inputted age in Neptune years.', () => {
+    expect(galacticAge.neptuneAge).toEqual("0.15");
+  });
 });
