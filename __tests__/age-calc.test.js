@@ -7,7 +7,7 @@ describe('GalacticAge', () => {
   });
 
   test('should create galacticAge object with user input age and life expectancy parameters', () => {
-    expect(galacticAge).toEqual({age: 25, lifExpectancy: 100});
+    expect(galacticAge).toEqual({age: 25, lifeExpectancy: 100});
   });
 });
 
