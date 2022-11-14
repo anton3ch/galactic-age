@@ -59,16 +59,19 @@ describe('GalacticAge', () => {
     galacticAge.calcExpectancy();
   });
 
-  test('should create GalacticAge method that returns user inputted age in Mercury years.', () => {
+  test('should create GalacticAge method that returns how many years user has left to live in Mercury years.', () => {
     expect(galacticAge.mercuryAgeExpect).toEqual(311.08);
   });
 
-  test('should create GalacticAge method that returns user inputted age in Venus years.', () => {
+  test('should create GalacticAge method that returns how many years user has left to live in Venus years.', () => {
     expect(galacticAge.venusAgeExpect).toEqual(121.67);
   });
 
-
-  test('should create GalacticAge method that returns user inputted age in Venus years.', () => {
+  test('should create GalacticAge method that returns how many years user has left to live in Mars years.', () => {
     expect(galacticAge.marsAgeExpect).toEqual(39.85);
+  });
+
+  test('should create GalacticAge method that returns how many years user has left to live in Jupiter years.', () => {
+    expect(galacticAge.jupiterAgeExpect).toEqual(6.32);
   });
 });
