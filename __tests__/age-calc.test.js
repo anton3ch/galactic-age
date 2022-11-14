@@ -45,10 +45,6 @@ describe('GalacticAge', () => {
   test('should calculate user inputted age in Neptune years.', () => {
     expect(galacticAge.neptuneAge).toEqual("0.15");
   });
-
-  test('should calculate user inputted age in Pluto years.', () => {
-    expect(galacticAge.plutoAge).toEqual("0.10");
-  });
 });
 
 describe('GalacticAge', () => {
