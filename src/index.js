@@ -3,19 +3,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import {GalacticAge} from './js/age-calc.js';
 
+//in development
+// function handleLoad() {
+//   document.getElementById("solar").addEventListener("click", function(event){
+//     let inputId = event.target.id;
+//     console.log(inputId);
+//     let targetBox = document.getElementById(inputId + "Info");
+//     console.log(targetBox);
+//     // $(".text-left").not(targetBox).hide();
+//     targetBox.show();
+//   });
+// }
 
-function handleLoad() {
-  document.getElementById("solar").addEventListener("click", function(event){
-    let inputId = event.target.id;
-    console.log(inputId);
-    let targetBox = document.getElementById(inputId + "Info");
-    console.log(targetBox);
-    // $(".text-left").not(targetBox).hide();
-    targetBox.show();
-  });
-}
-
-window.addEventListener("load", handleLoad);
+// window.addEventListener("load", handleLoad);
 
 document.getElementById("user-form").addEventListener("submit", function(event) {
   event.preventDefault();
@@ -31,8 +31,8 @@ document.getElementById("user-form").addEventListener("submit", function(event) 
   document.getElementById("venusAge").innerText = galacticAge.venusAge;
   document.getElementById("venusExpect").innerText = galacticAge.venusAgeExpect;
 
-  document.getElementById("earthExpect").innerText = userAge;
-  document.getElementById("earthAge").innerText = lifeExpect;
+  document.getElementById("earthExpect").innerText = lifeExpect - userAge;
+  document.getElementById("earthAge").innerText = userAge;
 
   document.getElementById("marsAge").innerText = galacticAge.marsAge;
   document.getElementById("marsExpect").innerText = galacticAge.marsAgeExpect;
@@ -49,4 +49,5 @@ document.getElementById("user-form").addEventListener("submit", function(event) 
   document.getElementById("neptuneAge").innerText = galacticAge.neptuneAge;
   document.getElementById("neptuneExpect").innerText = galacticAge.neptuneAgeExpect;
 
+  document.getElementById("hidden").removeAttribute("class");
 });

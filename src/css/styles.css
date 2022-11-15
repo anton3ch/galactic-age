@@ -9,7 +9,19 @@ body {
   background-image: url(./../assets/images/milkyway.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
 
+#user-form {
+  border-radius: 20px;
+  width: max-content;
+  background: rgb(43,43,43);
+  background: radial-gradient(circle, rgba(43,43,43,1) 0%, rgba(43,43,43,0.8057598039215687) 54%);
+  /* position: absolute; */
+  left: 50%;
+  top: 50%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 2;
+  padding: 20px;
 }
 
 img {
@@ -102,15 +114,22 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.hidden {
+.planet-info {
   position: absolute;
   font-size: 0.5em;
-  background-color: rgb(53, 53, 59);
+  background: rgb(43,43,43);
+  background: radial-gradient(circle, rgba(43,43,43,1) 0%, rgba(43,43,43,0.8057598039215687) 54%);
   padding: 20px;
   border-radius: 20px;
   width: max-content;
+  width: 210px;
 }
 
-.hidden:hover {
-  display: block;
+.hidden {
+  /* display: none; */
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
 }
