@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galactic Age</title>
+</head>
+<body class="container text-center">
+  <form id="user-form">
+    <label for="user-age">Enter your age:</label>
+    <input id="user-age" type="number" min="1" value="25">
+    <label for="life-expect">Enter an average life expectancy for your demographic:</label>
+    <input id="life-expect" type="number" min="1" value="100">
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="solar" id="solar">
+    <img src="assets/images/thesun.png" alt="the sun" width="600px" id="sun">
+    <img src="assets/images/mercury1.png" alt="mercury" width="45px" id="mercury">
+    <img src="assets/images/venus2.png" alt="venus" width="130px" id="venus">
+    <img src="assets/images/earth3.png" alt="earth" width="100px" id="earth">
+    <img src="assets/images/mars4.png" alt="mars" width="55px" id="mars">
+    <img src="assets/images/jupiter5.png" alt="jupiter" width="200px" id="jupiter">
+    <img src="assets/images/saturn6.png" alt="saturn" width="220px" id="saturn">
+    <img src="assets/images/uranus7.png" alt="uranus" width="80px" id="uranus">
+    <img src="assets/images/neptune8.png" alt="neptune" width="120px" id="neptune">
+
+    <div class="hidden" id="hidden">
+      <div id="mercuryInfo" class="planet-info hidden text-left">
+        <h1>Mercury</h1>
+        <ul>
+          <li>Your age here: <span id="mercuryAge"></span></li>
+          <li>Your remaining years: <span id="mercuryExpect"></span></li>
+          <li>Distance from Earth: 56,974,146 mi</li>
+          <li>Size: </li>
+        </ul>
+      </div>
+      
+      <div id="venusInfo" class="planet-info hidden text-left">
+        <h1>Venus</h1>
+        <ul>
+          <li>Your age here: <span id="venusAge"></span></li>
+          <li>Your remaining years: <span id="venusExpect"></span></li>
+          <li>Distance from Earth: 25,724,767 mi</li>
+          <li>Size: </li>
+        </ul>
+      </div>
+      
+      <div id="earthInfo" class="planet-info hidden text-left">
+        <h1>Earth</h1>
+        <ul>
+          <li>Your age here: <span id="earthAge"></span></li>
+          <li>Your remaining years: <span id="earthExpect"></span></li>
+          <li>Distance from the Sun: </li>
+          <li>Size: </li>
+        </ul>
+      </div>
+      
+      <div id="marsInfo" class="planet-info hidden text-left">
+        <h1>Mars</h1>
+        <ul>
+          <li>Your age here: <span id="marsAge"></span></li>
+          <li>Your remaining years: <span id="marsExpect"></span></li>
+          <li>Distance from Earth: 48,678,219 mi</li>
+          <li>Size: </li>
+        </ul>
+      </div>
+      <div id="jupiterInfo" class="planet-info hidden text-left">
+        <h1>Jupiter</h1>
+        <ul>
+          <li>Your age here: <span id="jupiterAge"></span></li>
+          <li>Your remaining years: <span id="jupiterExpect"></span></li>
+          <li>Distance from Earth: 390,674,710 mi</li>
+          <li>Size: </li>
+        </ul>
+      </div>
+      
+      <div id="saturnInfo" class="planet-info hidden text-left">
+        <h1>Saturn</h1>
+        <ul>
+          <li>Your age here: <span id="saturnAge"></span></li>
+          <li>Your remaining years: <span id="saturnExpect"></span></li>
+          <li>Distance from Earth: 792,248,270 mi</li>
+          <li>Size: </li>
+        </ul>
+      </div>
+
+      <div id="uranusInfo" class="planet-info hidden text-left">
+        <h1>Uranus</h1>
+        <ul>
+          <li>Your age here: <span id="uranusAge"></span></li>
+          <li>Your remaining years: <span id="uranusExpect"></span></li>
+          <li>Distance from Earth: 1,692,662,530 mi</li>
+          <li>Size: </li>
+        </ul>
+      </div>
+
+      <div id="neptuneInfo" class="planet-info hidden text-left">
+        <h1>Neptune</h1>
+        <ul>
+          <li>Your age here: <span id="neptuneAge"></span></li>
+          <li>Your remaining years: <span id="neptuneExpect"></span></li>
+          <li>Distance from Earth: 2,703,959,960 mi</li>
+          <li>Size: </li>
+        </ul>
+      </div>
+           
+    </div>
+  </div>
+  <div>
+    <h2 class="hidden" id="prompt">Click on a planet to see the results</h2>
+  </div>
+<script src="bundle.js"></script></body>
+</html>
