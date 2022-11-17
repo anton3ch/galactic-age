@@ -10,6 +10,7 @@ function handleLoad() {
     let targetBox = $(`#${inputId}Info`);
     $(".text-left").not(targetBox).hide();
     targetBox.show();
+    $("#prompt").hide();
   });
 }
 
