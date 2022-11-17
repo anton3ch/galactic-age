@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
 html {
   height: 100%;
   overflow: hidden;
+
 }
 
 body {
+  font-family: 'Strait', sans-serif;
   height: 100%;
   color: aliceblue;
   background-image: url(./../assets/images/milkyway.jpg);
@@ -16,10 +20,10 @@ body {
   width: max-content;
   background: rgb(43,43,43);
   background: radial-gradient(circle, rgba(43,43,43,1) 0%, rgba(43,43,43,0.8057598039215687) 54%);
-  /* position: absolute; */
+  position: absolute;
   left: 50%;
-  top: 50%;
-  /* transform: translate(-50%, -50%); */
+  top: 2%;
+  transform: translate(-50%, 0%);
   z-index: 2;
   padding: 20px;
 }
@@ -126,10 +130,16 @@ img {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
 }
 
 ul {
   padding-left: 0;
   list-style: none;
+}
+#prompt {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }

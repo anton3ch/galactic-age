@@ -2,20 +2,18 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import {GalacticAge} from './js/age-calc.js';
+import $ from "jquery";
 
-//in development
-// function handleLoad() {
-//   document.getElementById("solar").addEventListener("click", function(event){
-//     let inputId = event.target.id;
-//     console.log(inputId);
-//     let targetBox = document.getElementById(inputId + "Info");
-//     console.log(targetBox);
-//     // $(".text-left").not(targetBox).hide();
-//     targetBox.show();
-//   });
-// }
+function handleLoad() {
+  document.getElementById("solar").addEventListener("click", function(event){
+    let inputId = event.target.id;
+    let targetBox = $(`#${inputId}Info`);
+    $(".text-left").not(targetBox).hide();
+    targetBox.show();
+  });
+}
 
-// window.addEventListener("load", handleLoad);
+window.addEventListener("load", handleLoad);
 
 document.getElementById("user-form").addEventListener("submit", function(event) {
   event.preventDefault();
@@ -54,4 +52,5 @@ document.getElementById("user-form").addEventListener("submit", function(event) 
   document.getElementById("neptuneAge").innerText = galacticAge.neptuneAge;
 
   document.getElementById("hidden").removeAttribute("class");
+  $("#prompt").show();
 });
