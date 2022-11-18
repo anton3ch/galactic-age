@@ -30,6 +30,7 @@ export class GalacticAge {
       this.jupiterAgeExpect = Math.abs(((this.age - this.lifeExpectancy) / 11.86).toFixed(2));
       this.saturnAgeExpect = Math.abs(((this.age - this.lifeExpectancy) / 29.5).toFixed(2));
       this.uranusAgeExpect = Math.abs(((this.age - this.lifeExpectancy) / 84).toFixed(2));
+      this.neptuneAgeExpect = Math.abs(((this.age - this.lifeExpectancy) / 165).toFixed(2));
     }
   }
 }
