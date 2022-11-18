@@ -26,6 +26,7 @@ export class GalacticAge {
     } else {
       this.mercuryAgeExpect = Math.abs(((this.age - this.lifeExpectancy) * 365 / 88).toFixed(2));
       this.venusAgeExpect = Math.abs(((this.age - this.lifeExpectancy) * 365 / 225).toFixed(2));
+      this.marsAgeExpect = Math.abs(((this.age - this.lifeExpectancy) * 365 / 687).toFixed(2));
     }
   }
 }
