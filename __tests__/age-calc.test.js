@@ -82,11 +82,18 @@ describe('GalacticAge', () => {
   test('should create GalacticAge method that returns how many years user has left to live in Neptune years.', () => {
     expect(galacticAge.neptuneAgeExpect).toEqual(0.45);
   });
+});
 
-  test('should test if the absolute number is returned even when user surpassed the life expectancy.', () => {
-    let galacticAge2 = new GalacticAge(75, 70);
-    galacticAge2.calcAge();
-    galacticAge2.calcExpectancy();
-    expect(galacticAge2.mercuryAgeExpect).toEqual(20.74);
+  describe('GalacticAge', () => {
+    let galacticAge;
+    beforeEach(() => { 
+      galacticAge = new GalacticAge(70, 60);
+      galacticAge.calcAge();
+      galacticAge.calcExpectancy();
+    });
+
+  test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Mercury years.', () => {
+    expect(galacticAge.mercuryAgeExpect).toEqual(311.08);
   });
+
 });
