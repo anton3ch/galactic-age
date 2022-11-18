@@ -99,5 +99,12 @@ describe('GalacticAge', () => {
   test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Venus years.', () => {
     expect(galacticAge.venusAgeExpect).toEqual(16.22);
   });
+
+  test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Mars years.', () => {
+    expect(galacticAge.marsAgeExpect).toEqual(5.31);
+  });
 });
+
+
+
 
