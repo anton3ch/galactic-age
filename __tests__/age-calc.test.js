@@ -107,6 +107,11 @@ describe('GalacticAge', () => {
   test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Jupiter years.', () => {
     expect(galacticAge.jupiterAgeExpect).toEqual(0.84);
   });
+
+  test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Saturn years.', () => {
+    expect(galacticAge.saturnAgeExpect).toEqual(0.34);
+  });
+
 });
 
 
