@@ -84,16 +84,20 @@ describe('GalacticAge', () => {
   });
 });
 
-  describe('GalacticAge', () => {
-    let galacticAge;
-    beforeEach(() => { 
-      galacticAge = new GalacticAge(70, 60);
-      galacticAge.calcAge();
-      galacticAge.calcExpectancy();
-    });
-
-  test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Mercury years.', () => {
-    expect(galacticAge.mercuryAgeExpect).toEqual(311.08);
+describe('GalacticAge', () => {
+  let galacticAge;
+  beforeEach(() => { 
+    galacticAge = new GalacticAge(70, 60);
+    galacticAge.calcAge();
+    galacticAge.calcExpectancy();
   });
 
+  test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Mercury years.', () => {
+    expect(galacticAge.mercuryAgeExpect).toEqual(41.48);
+  });
+
+  test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Venus years.', () => {
+    expect(galacticAge.venusAgeExpect).toEqual(16.22);
+  });
 });
+
