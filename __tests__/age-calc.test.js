@@ -112,7 +112,12 @@ describe('GalacticAge', () => {
     expect(galacticAge.saturnAgeExpect).toEqual(0.34);
   });
 
+  test('should create calcExpectancy() method that returns how many years user has lived past their demographic expectancy in Uranus years.', () => {
+    expect(galacticAge.uranusAgeExpect).toEqual(0.12);
+  });
+
 });
+
 
 
 
