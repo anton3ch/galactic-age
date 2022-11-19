@@ -30,6 +30,7 @@ body {
 
 img {
   position: absolute;
+  cursor: pointer;
 }
 
 #sun {
@@ -120,7 +121,7 @@ img {
 
 .planet-info {
   position: absolute;
-  font-size: 0.5em;
+  font-size: 0.8em;
   background: rgb(43,43,43);
   background: radial-gradient(circle, rgba(43,43,43,1) 0%, rgba(43,43,43,0.8057598039215687) 54%);
   padding: 20px;

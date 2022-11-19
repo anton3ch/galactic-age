@@ -1,11 +1,11 @@
 {
-  "name": "galactic-age",
+  "name": "Interplanetary-age",
   "version": "1.0.0",
   "homepage": "https://anton3ch.github.io/galactic-age",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d dist -b main",
+    "deploy": "npm run build && gh-pages -d dist",
     "build": "webpack --mode=development",
     "start": "npm run build && webpack-dev-server --open --mode=development",
     "lint": "eslint src/*.js",
